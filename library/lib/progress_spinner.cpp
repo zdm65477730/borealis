@@ -32,7 +32,7 @@ void ProgressSpinner::restartAnimation()
 {
     Style* style = Application::getStyle();
 
-    menu_animation_ctx_tag tag = (uintptr_t) & this->animationValue;
+    menu_animation_ctx_tag tag = (menu_animation_ctx_tag) & this->animationValue;
     menu_animation_ctx_entry_t entry;
 
     this->animationValue = 0.0f;
@@ -51,13 +51,13 @@ void ProgressSpinner::restartAnimation()
     menu_animation_push(&entry);
 }
 
-void ProgressSpinner::layout(NVGcontext* vg, Style* style, FontStash* stash)
-{
-    this->height = std::min(this->width, this->height);
-    this->width  = this->height;
-}
+// void ProgressSpinner::layout(NVGcontext* vg, Style* style, FontStash* stash)
+// {
+//     this->height = std::min(this->width, this->height);
+//     this->width  = this->height;
+// }
 
-void ProgressSpinner::draw(NVGcontext* vg, int x, int y, unsigned width, unsigned height, Style* style, FrameContext* ctx)
+void ProgressSpinner::draw(NVGcontext* vg, float x, float y, float width, float height, Style* style, FrameContext* ctx)
 {
     NVGcolor barColor = a(ctx->theme->spinnerBarColor);
 
@@ -86,7 +86,7 @@ void ProgressSpinner::willAppear(bool resetState)
 
 void ProgressSpinner::willDisappear(bool resetState)
 {
-    menu_animation_ctx_tag tag = (uintptr_t) & this->animationValue;
+    menu_animation_ctx_tag tag = (menu_animation_ctx_tag) & this->animationValue;
 
     this->animationValue = 0.0f;
 

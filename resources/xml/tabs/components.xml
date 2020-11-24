@@ -1,0 +1,141 @@
+<brls:ScrollingFrame
+    width="auto"
+    height="auto" >
+
+    <brls:Box
+        width="auto"
+        height="auto"
+        axis="column"
+        paddingLeft="@style/brls/tab_frame/content_padding_sides"
+        paddingRight="@style/brls/tab_frame/content_padding_sides"
+        paddingTop="@style/brls/tab_frame/content_padding_top_bottom"
+        paddingBottom="@style/brls/tab_frame/content_padding_top_bottom">
+
+            <brls:Label
+                width="auto"
+                height="auto"
+                text="@i18n/demo/welcome"
+                marginBottom="10px" />
+
+            <!-- TODO: Buttons first to allow natural scrolling -->
+
+            <!-- Labels -->
+            <!-- TODO: remove hardcoded width 30% once that label thing is sorted out, remove the warning in Label doc too -->
+            <brls:Header
+                width="auto"
+                height="auto"
+                title="@i18n/demo/components/labels_header"
+                marginBottom="30px" />
+
+            <brls:Label
+                width="auto"
+                height="auto"
+                text="@i18n/demo/components/regular_label"
+                marginBottom="30px" />
+
+            <brls:Box
+                width="auto"
+                height="auto"
+                axis="row"
+                justifyContent="spaceEvenly"
+                marginBottom="30px" >
+
+                <brls:Label
+                    width="30%"
+                    height="auto"
+                    text="@i18n/demo/components/label_left"
+                    textAlign="left" />
+
+                <brls:Label
+                    width="30%"
+                    height="auto"
+                    text="@i18n/demo/components/label_center"
+                    textAlign="center" />
+
+                <brls:Label
+                    width="30%"
+                    height="auto"
+                    text="@i18n/demo/components/label_right"
+                    textAlign="right" />
+
+            </brls:Box>
+
+            <!-- Images -->
+            <brls:Header
+                width="auto"
+                height="auto"
+                title="@i18n/demo/components/images_header_title"
+                subtitle="@i18n/demo/components/images_header_subtitle"
+                marginBottom="30px" />
+
+            <brls:Box
+                width="auto"
+                height="auto"
+                axis="row"
+                alignItems="center"
+                justifyContent="spaceEvenly"
+                marginBottom="30px">
+
+                <CaptionedImage
+                    width="auto"
+                    height="auto"
+                    imageWidth="76px"
+                    imageHeight="76px"
+                    image="@res/icon/tiles.png"
+                    caption="@i18n/demo/components/images_downscaled" />
+
+                <CaptionedImage
+                    id="image_original"
+                    width="auto"
+                    height="auto"
+                    imageWidth="auto"
+                    imageHeight="auto"
+                    image="@res/icon/tiles.png"
+                    caption="@i18n/demo/components/images_original" />
+
+                <CaptionedImage
+                    id="image_upscaled"
+                    width="auto"
+                    height="auto"
+                    imageWidth="170px"
+                    imageHeight="170px"
+                    maxWidth="170px"
+                    image="@res/icon/tiles.png"
+                    caption="@i18n/demo/components/images_upscaled"
+                    focusDown="image_cropped" />
+
+            </brls:Box>
+
+            <brls:Box
+                width="auto"
+                height="auto"
+                axis="row"
+                alignItems="center"
+                justifyContent="spaceEvenly">
+
+                <CaptionedImage
+                    width="auto"
+                    height="auto"
+                    imageWidth="400px"
+                    imageHeight="75px"
+                    image="@res/icon/tiles.png"
+                    scalingType="stretch"
+                    caption="@i18n/demo/components/images_stretched"
+                    focusUp="image_original" />
+
+                <CaptionedImage
+                    id="image_cropped"
+                    width="auto"
+                    height="auto"
+                    imageWidth="auto"
+                    imageHeight="75px"
+                    image="@res/icon/tiles.png"
+                    scalingType="crop"
+                    caption="@i18n/demo/components/images_cropped"
+                    focusUp="image_upscaled" />
+
+            </brls:Box>
+
+    </brls:Box>
+
+</brls:ScrollingFrame>
