@@ -123,7 +123,7 @@ ListItem::ListItem(std::string label, std::string description, std::string subLa
         this->descriptionView->setParent(this);
     }
 
-    this->registerAction("确认"_i18n, Key::A, [this] { return this->onClick(); });
+    this->registerAction("brls/hints/ok"_i18n, Key::A, [this] { return this->onClick(); });
 }
 
 void ListItem::setThumbnail(Image* image)

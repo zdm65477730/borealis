@@ -1,0 +1,65 @@
+{
+    "name": "Borealis示例应用程序",
+    "tabs": {
+        "first": "第一个标签",
+        "second": "第二个标签",
+        "third": "第三个标签",
+        "fourth": "第四个标签",
+        "custom_navigation_tab": "自定义布局"
+    },
+
+    "pozznx": {
+        "open": "打开一个对话框",
+        "warning": "警告：PozzNX会擦除您Switch上的所有数据并使其无法使用，是否要继续？",
+        "running": "正在运行PozzNX...",
+        "continue": "继续"
+    },
+
+    "notify": "发布随机通知",
+
+    "tv": {
+        "resolution": "电视解析度",
+        "automatic": "自动"
+    },
+
+    "i18n": {
+        "title": "语言： {0} ({1})",
+        "lang": "英语"
+    },
+
+    "jank": {
+        "jank": "用户界面跳帧",
+        "native": "负数",
+        "minimal": "最小",
+        "regular": "常规",
+        "maximum": "最大",
+        "saxophone": "SX OS",
+        "vista": "Windows Vista",
+        "ios": "iOS 14"
+    },
+
+    "divide": {
+        "title": "除0",
+        "description": "SWITCH能做这些吗？",
+        "crash": "由于发生错误，软件已关闭：\nSIGABRT（信号6）"
+    },
+
+    "more": "有关如何使用Nintendo Switch及其功能的更多信息，请参阅智能设备或PC上的Nintendo支持网站。",
+
+    "actions": {
+        "title": "自定义动作",
+        "notify": "显示通知",
+        "triggered": "触发自定义操作"
+    },
+
+    "layers": {
+        "title": "选择图层",
+        "layer1": "图层 1",
+        "layer2": "图层 2",
+
+        "item1": "项目 1",
+        "item2": "项目 2",
+        "item3": "项目 3"
+    }
+}
+
