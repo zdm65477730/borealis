@@ -34,7 +34,7 @@ namespace brls
 Button::Button(ButtonStyle style)
     : style(style)
 {
-    this->registerAction("brls/hints/ok"_i18n, Key::A, [this] { return this->onClick(); });
+    this->registerAction("确认"_i18n, Key::A, [this] { return this->onClick(); });
 }
 
 LabelStyle Button::getLabelStyle()

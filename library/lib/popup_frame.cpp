@@ -43,7 +43,7 @@ PopupFrame::PopupFrame(std::string title, unsigned char* imageBuffer, size_t ima
     }
 
     contentView->setAnimateHint(true);
-    this->registerAction("brls/hints/back"_i18n, Key::B, [this] { return this->onCancel(); });
+    this->registerAction("返回"_i18n, Key::B, [this] { return this->onCancel(); });
 }
 
 PopupFrame::PopupFrame(std::string title, std::string imagePath, AppletFrame* contentView, std::string subTitleLeft, std::string subTitleRight)
@@ -60,7 +60,7 @@ PopupFrame::PopupFrame(std::string title, std::string imagePath, AppletFrame* co
     }
 
     contentView->setAnimateHint(true);
-    this->registerAction("brls/hints/back"_i18n, Key::B, [this] { return this->onCancel(); });
+    this->registerAction("返回"_i18n, Key::B, [this] { return this->onCancel(); });
 }
 
 PopupFrame::PopupFrame(std::string title, AppletFrame* contentView, std::string subTitleLeft, std::string subTitleRight)
@@ -76,7 +76,7 @@ PopupFrame::PopupFrame(std::string title, AppletFrame* contentView, std::string 
     }
 
     contentView->setAnimateHint(true);
-    this->registerAction("brls/hints/back"_i18n, Key::B, [this] { return this->onCancel(); });
+    this->registerAction("返回"_i18n, Key::B, [this] { return this->onCancel(); });
 }
 
 void PopupFrame::draw(NVGcontext* vg, int x, int y, unsigned width, unsigned height, Style* style, FrameContext* ctx)
