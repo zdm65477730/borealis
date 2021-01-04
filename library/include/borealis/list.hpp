@@ -155,7 +155,6 @@ class ToggleListItem : public ListItem
 
     void setToggleState(bool state);
     bool getToggleState();
-    void setToggleState(bool state);
 };
 
 // A list item which spawns the swkbd
