@@ -486,6 +486,11 @@ bool ToggleListItem::onClick()
     return true;
 }
 
+void ToggleListItem::setToggleState(bool state)
+{
+    this->toggleState = state;
+}
+
 bool ToggleListItem::getToggleState()
 {
     return this->toggleState;
