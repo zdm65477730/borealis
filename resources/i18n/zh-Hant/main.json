@@ -60,6 +60,18 @@
         "item1": "项目 1",
         "item2": "项目 2",
         "item3": "项目 3"
+    },
+
+    "keyboard": {
+        "string": {
+            "title": "打開鍵盤",
+            "default": "默認文本",
+            "help": "幫助消息"
+        },
+        "number": {
+            "title": "打開數字鍵盤",
+            "help": "幫助消息"
+        }
     }
 }
 
